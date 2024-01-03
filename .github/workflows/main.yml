@@ -14,7 +14,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.CROSS_REPO_PAT }}
-          repository: <username>/<repository-name>
+          repository: early-feedback
           event-type: trigger-cross-repo-workflow
           client-payload: '{"key": "value"}'
 
